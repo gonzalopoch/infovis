@@ -13,4 +13,4 @@
 
 **Semana 2** 
 
-[Makeover Monday - W19 - World Happiness Report 2020 (Flourish Link)](https://public.flourish.studio/visualisation/2507173/) Source: [data.world](https://data.world/makeovermonday/2020w20)
+[Makeover Monday - W20 - Visualizing Auto Insurance Rate by State (Flourish Link)](https://public.flourish.studio/visualisation/2507173/) Source: [data.world](https://data.world/makeovermonday/2020w20)
