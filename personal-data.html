@@ -4,48 +4,349 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Personal Data</title>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
 <body>
+
+  <!-- CSS -->
+  <style type="text/css" media="screen">
   
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    ion-icon:hover {
+      border: 3px solid silver;
+      background: black;
+    }
+  </style>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">InfoVis 2020</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#Intro">Intro <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#d3js">D3.js</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#Sankey">googleVis</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="#Summary">Summary</a>
         </li>
       </ul>
+
     </div>
   </nav>
 
-  <style type="text/css" media="screen">
-  /* Add style rules here */
-    ion-icon:hover {
-    border: 3px solid silver;
-    background: black;
-  }
-  </style>
+  <div class="jumbotron" id="Intro">
+    <p></p>
+    <p class="lead">Trabajo Final - Datos Personales</p>
+    <hr class="my-4">
+    <p>El Trabajo Final consistió en la recopilación de información personal, para luego generar diferentes visualizaciones para representarla. La información obtenida hace referencia a los colores de las remeras que han sido utilizadas por los integrantes de la casa del autor, entre el 8 y el 23 de mayo del 2020, en contexto de confinamiento social obligatorio. En este caso, se muestran a continuación distintas visualizaciones generadas con diferentes herramientas: D3.js, googleVis (R) y HTML (Bootstrap). </p>
+  </div>
 
-  <div id="Gustavo"></div>  
-  <div id="Mariela"></div>
-  <div id="Julieta"></div>
-  <div id="Gonzalo"></div>
+  <!-- D3.js visualization-->
+  <div class="container justify-content-center" id="d3js" style="padding-bottom: 50px;">
+    <p class="lead">D3.js</p>
+    <hr class="my-4">
+    <div id="Gustavo"></div>  
+    <div id="Mariela"></div>
+    <div id="Julieta"></div>
+    <div id="Gonzalo"></div>
+  </div>
 
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <!-- Sankey generated in R 3.6.1 by googleVis 0.6.4 package -->
+    <!-- jsHeader -->
+    <script type="text/javascript">
+
+      // jsData 
+      function gvisDataSankeyID5dc81eed37c3 () {
+      var data = new google.visualization.DataTable();
+      var datajson =
+      [
+       [
+      "White","Gustavo",3
+      ],
+      [
+      "Blue",
+      "Gustavo",
+      4
+      ],
+      [
+      "Red",
+      "Gustavo",
+      0
+      ],
+      [
+      "Lightblue",
+      "Gustavo",
+      0
+      ],
+      [
+      "Black",
+      "Gustavo",
+      2
+      ],
+      [
+      "Yellow",
+      "Gustavo",
+      0
+      ],
+      [
+      "Gray",
+      "Gustavo",
+      6
+      ],
+      [
+      "Green",
+      "Gustavo",
+      0
+      ],
+      [
+      "White",
+      "Mariela",
+      10
+      ],
+      [
+      "Blue",
+      "Mariela",
+      2
+      ],
+      [
+      "Red",
+      "Mariela",
+      0
+      ],
+      [
+      "Lightblue",
+      "Mariela",
+      0
+      ],
+      [
+      "Black",
+      "Mariela",
+      3
+      ],
+      [
+      "Yellow",
+      "Mariela",
+      0
+      ],
+      [
+      "Gray",
+      "Mariela",
+      0
+      ],
+      [
+      "Green",
+      "Mariela",
+      0
+      ],
+      [
+      "White",
+      "Julieta",
+      2
+      ],
+      [
+      "Blue",
+      "Julieta",
+      3
+      ],
+      [
+      "Red",
+      "Julieta",
+      0
+      ],
+      [
+      "Lightblue",
+      "Julieta",
+      0
+      ],
+      [
+      "Black",
+      "Julieta",
+      5
+      ],
+      [
+      "Yellow",
+      "Julieta",
+      1
+      ],
+      [
+      "Gray",
+      "Julieta",
+      3
+      ],
+      [
+      "Green",
+      "Julieta",
+      1
+      ],
+      [
+      "White",
+      "Gonzalo",
+      5
+      ],
+      [
+      "Blue",
+      "Gonzalo",
+      2
+      ],
+      [
+      "Red",
+      "Gonzalo",
+      1
+      ],
+      [
+      "Lightblue",
+      "Gonzalo",
+      1
+      ],
+      [
+      "Black",
+      "Gonzalo",
+      3
+      ],
+      [
+      "Yellow",
+      "Gonzalo",
+      0
+      ],
+      [
+      "Gray",
+      "Gonzalo",
+      2
+      ],
+      [
+      "Green",
+      "Gonzalo",
+      1
+      ] 
+      ];
+      data.addColumn('string','Color');
+      data.addColumn('string','Persona');
+      data.addColumn('number','Usos');
+      data.addRows(datajson);
+      return(data);
+      }
+
+
+      // jsDrawChart
+      function drawChartSankeyID5dc81eed37c3() {
+      var data = gvisDataSankeyID5dc81eed37c3();
+      var options = {};
+      options["width"] = 1000;
+      options["height"] = 500;
+      options["sankey"] = {
+              link: { colorMode: 'source',
+                     colors: ['#E3DBD9','#05045A','#F11C1C','#4AB9DA','#171414','yellow','#978E8B','green'] },
+              node: {colors: ['#E3DBD9','grey','#05045A','#F11C1C','#4AB9DA','#171414','yellow','grey','green','grey','grey','grey']}};
+
+
+          var chart = new google.visualization.Sankey(
+          document.getElementById('SankeyID5dc81eed37c3')
+          );
+          chart.draw(data,options);
+          
+
+      }
+
+      // jsDisplayChart
+      (function() {
+      var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+      var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+      var chartid = "sankey";
+        
+      // Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+      var i, newPackage = true;
+      for (i = 0; newPackage && i < pkgs.length; i++) {
+      if (pkgs[i] === chartid)
+      newPackage = false;
+      }
+      if (newPackage)
+        pkgs.push(chartid);
+        
+      // Add the drawChart function to the global list of callbacks
+      callbacks.push(drawChartSankeyID5dc81eed37c3);
+      })();
+      function displayChartSankeyID5dc81eed37c3() {
+        var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+        var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+        window.clearTimeout(window.__gvisLoad);
+        // The timeout is set to 100 because otherwise the container div we are
+        // targeting might not be part of the document yet
+        window.__gvisLoad = setTimeout(function() {
+        var pkgCount = pkgs.length;
+        google.load("visualization", "1", { packages:pkgs, callback: function() {
+        if (pkgCount != pkgs.length) {
+        // Race condition where another setTimeout call snuck in after us; if
+        // that call added a package, we must not shift its callback
+        return;
+      }
+      while (callbacks.length > 0)
+      callbacks.shift()();
+      } });
+      }, 100);
+      }
+
+
+      // jsFooter
+    </script>
+
+    <!-- jsChart -->  
+    <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID5dc81eed37c3"></script>
+
+    <!-- divChart -->
+    <div id="Sankey" class="container" style="padding-bottom: 50px;">
+      <p></p>
+      <p></p>
+      <p class="lead">googleVis Sankey (R)</p>
+      <hr class="my-4">
+      <div id="SankeyID5dc81eed37c3" 
+        style="width: 1000; height: 500;">
+      </div>
+    </div>
   
+  <!-- Summary -->
+  <div class="jumbotron" id="Summary">
+    <p class="lead">Summary</p>
+    <hr class="my-4">
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Color más usado
+      </button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Más usado: Gustavo
+      </button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Más usado: Mariela
+      </button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Más usado: Julieta
+      </button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Más usado: Gonzalo
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <a class="navbar-brand" href="https://github.com/gonzalopoch">Hecho por: Gonzalo J. Poch</a>
+    <label><small>Visualización de la Información (Ariel Aizemberg) | Especialización en Ciencia de Datos | <b> Instituto Tecnológico de Buenos Aires</b></small></label>
+  </nav>
+
+  <!-- D3.js script-->
   <script> 
     var url = "https://raw.githubusercontent.com/gonzalopoch/infovis/gh-pages/test-js.csv"
 
@@ -99,7 +400,15 @@
     draw("d.Mariela", "div#Mariela", "Mariela");
     draw("d.Julieta", "div#Julieta", "Julieta");
     draw("d.Gonzalo", "div#Gonzalo", "Gonzalo");
-    
   </script>
+
+  <!-- Import Icons -->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  <!-- Import Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
