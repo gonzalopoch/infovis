@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Data</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+  
+  <style type="text/css" media="screen">
+  /* Add style rules here */
+    ion-icon:hover {
+    border: 3px solid silver;
+    background: black;
+  }
+  </style>
+
+  <div id="Gustavo"></div>  
+  <div id="Mariela"></div>
+  <div id="Julieta"></div>
+  <div id="Gonzalo"></div>
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  
+  <script> 
+    var url = "https://raw.githubusercontent.com/gonzalopoch/infovis/gh-pages/test-js.csv"
+
+    //var url = "https://download.data.world/s/so6fbu7jjvdoagcun3fvwssca4xj36";
+     
+    function draw(name, divN, n){
+      d3.csv( url ).then(function(data) {
+       data.forEach(function(d, c) {
+        d.color = (eval(name));
+      });
+        
+      color = data.map(d => d.color)
+     
+      d3.select(divN)
+          .append("p")
+          .text(n)
+      
+      color.forEach(function(d){
+        if(d=="Black"){
+          d3.select(divN)
+          .append("ion-icon")
+          .attr("name", "shirt-outline")
+          .attr("size", "medium")
+          .style("background", "#000000" )
+          .style("padding","20px") 
+          .style("margin","2px")
+          .style("border-radius", "50%")
+          .style("color","White")
+          .attr("title", d)
+          .text( d ); }
+        else{
+           d3.select(divN)
+          .append("ion-icon")
+          .attr("name", "shirt")
+          .attr("size", "medium")
+          .style("background", "#000000" )
+          .style("padding","20px") 
+          .style("margin","2px")
+          .style("border-radius", "50%")
+          .style("color",d)
+          .attr("title", d)
+          .text( d ); 
+        }
+      });
+
+    })
+      return undefined;
+    }
+
+    draw("d.Gustavo", "div#Gustavo", "Gustavo");
+    draw("d.Mariela", "div#Mariela", "Mariela");
+    draw("d.Julieta", "div#Julieta", "Julieta");
+    draw("d.Gonzalo", "div#Gonzalo", "Gonzalo");
+    
+  </script>
+</body>
+</html>
