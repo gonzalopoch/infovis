@@ -18,7 +18,10 @@
 [Timeline JS - Club Estudiantes de La Plata](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11GJMXl5rRmxSqhIjvDFF6sF7exVMCwGEFv-YHHDcTRo&font=Default&lang=en&initial_zoom=2&height=650)
 
 **Semana 4** 
+
+_Work in progress_
+
 [Makeover Monday - W21 - Visualizing 40 Years of Music Industry Sales]() Source: [data.world](https://data.world/makeovermonday/2020w21-visualizing-40-years-of-music-industry-sales)
 
-[TP Final - Datos Personales]
+[TP Final - Datos Personales]()
 
