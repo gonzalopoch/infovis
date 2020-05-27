@@ -11,6 +11,15 @@
 
 [Makeover Monday - W19 - World Happiness Report 2020 (Power BI Download)](https://github.com/gonzalopoch/infovis/raw/gh-pages/momw19.pbix). Source: [data.world](https://data.world/makeovermonday/2020w19-world-happiness-report-2020)
 
-**Semana 2** 
+**Semana 3** 
 
 [Makeover Monday - W20 - Visualizing Auto Insurance Rate by State (Flourish Link)](https://public.flourish.studio/visualisation/2507173/) Source: [data.world](https://data.world/makeovermonday/2020w20)
+
+[Timeline JS - Club Estudiantes de La Plata](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11GJMXl5rRmxSqhIjvDFF6sF7exVMCwGEFv-YHHDcTRo&font=Default&lang=en&initial_zoom=2&height=650)
+
+**Semana 4** _(Work in progress)_
+
+[Makeover Monday - W21 - Visualizing 40 Years of Music Industry Sales]() Source: [data.world](https://data.world/makeovermonday/2020w21-visualizing-40-years-of-music-industry-sales)
+
+[TP Final - Datos Personales]()
+
