@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>googleVis Sankey</title>
+</head>
+<body>
+  <!-- Sankey generated in R 3.6.1 by googleVis 0.6.4 package -->
+<!-- Wed May 27 02:27:38 2020 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataSankeyID5dc879b74f1c () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"White",
+"Gustavo",
+3
+],
+[
+"Blue",
+"Gustavo",
+4
+],
+[
+"Red",
+"Gustavo",
+0
+],
+[
+"Lightblue",
+"Gustavo",
+0
+],
+[
+"Black",
+"Gustavo",
+2
+],
+[
+"Yellow",
+"Gustavo",
+0
+],
+[
+"Gray",
+"Gustavo",
+6
+],
+[
+"Green",
+"Gustavo",
+0
+],
+[
+"White",
+"Mariela",
+10
+],
+[
+"Blue",
+"Mariela",
+2
+],
+[
+"Red",
+"Mariela",
+0
+],
+[
+"Lightblue",
+"Mariela",
+0
+],
+[
+"Black",
+"Mariela",
+3
+],
+[
+"Yellow",
+"Mariela",
+0
+],
+[
+"Gray",
+"Mariela",
+0
+],
+[
+"Green",
+"Mariela",
+0
+],
+[
+"White",
+"Julieta",
+2
+],
+[
+"Blue",
+"Julieta",
+3
+],
+[
+"Red",
+"Julieta",
+0
+],
+[
+"Lightblue",
+"Julieta",
+0
+],
+[
+"Black",
+"Julieta",
+5
+],
+[
+"Yellow",
+"Julieta",
+1
+],
+[
+"Gray",
+"Julieta",
+3
+],
+[
+"Green",
+"Julieta",
+1
+],
+[
+"White",
+"Gonzalo",
+5
+],
+[
+"Blue",
+"Gonzalo",
+2
+],
+[
+"Red",
+"Gonzalo",
+1
+],
+[
+"Lightblue",
+"Gonzalo",
+1
+],
+[
+"Black",
+"Gonzalo",
+3
+],
+[
+"Yellow",
+"Gonzalo",
+0
+],
+[
+"Gray",
+"Gonzalo",
+2
+],
+[
+"Green",
+"Gonzalo",
+1
+] 
+];
+data.addColumn('string','Color');
+data.addColumn('string','Persona');
+data.addColumn('number','Usos');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartSankeyID5dc879b74f1c() {
+var data = gvisDataSankeyID5dc879b74f1c();
+var options = {};
+options["width"] = 1000;
+options["height"] = 500;
+options["sankey"] = {
+        link: { colorMode: 'source',
+               colors: ['#E3DBD9','#05045A','#F11C1C','#4AB9DA','#171414','yellow','#978E8B','green'] },
+        node: {colors: ['#E3DBD9','grey','#05045A','#F11C1C','#4AB9DA','#171414','yellow','grey','green','grey','grey','grey']}};
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID5dc879b74f1c')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID5dc879b74f1c);
+})();
+function displayChartSankeyID5dc879b74f1c() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID5dc879b74f1c"></script>
+
+
+<!-- divChart -->
+  
+<div id="SankeyID5dc879b74f1c" 
+  style="width: 1000; height: 500;">
+</div>
+
+
+</body>
+</html>
