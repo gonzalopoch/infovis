@@ -24,6 +24,16 @@
       align-items: center; 
     }
 
+    #circles {
+      
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin: auto;
+      margin: 100px;
+    }
+
   </style>
   
   <!-- Navbar -->
@@ -47,6 +57,9 @@
           <a class="nav-link" href="#flourish">Area Chart</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#circlep">Circle Packing</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#Summary">Summary</a>
         </li>
       </ul>
@@ -58,7 +71,7 @@
     <p></p>
     <p class="lead" style="color: white;"><b>Trabajo Final - Datos Personales</b></p>
     <hr class="my-4" style="background-color: white;">
-    <p style="color: white;">El Trabajo Final consistió en la recopilación de información personal, para luego generar diferentes visualizaciones para representarla. La información obtenida hace referencia a los colores de las remeras que han sido utilizadas por los integrantes de la casa del autor, entre el 8 y el 23 de mayo del 2020, en contexto de confinamiento social obligatorio (COVID19). A continuación, se muestran distintas visualizaciones generadas con diferentes herramientas: D3.js, googleVis (R), Flourish y HTML (Bootstrap embebido). </p>
+    <p style="color: white;">El Trabajo Final consistió en la recopilación de información personal, para luego generar diferentes visualizaciones para representarla. La información obtenida hace referencia a los colores de las remeras que han sido utilizadas por los integrantes de la casa del autor, entre el 8 y el 23 de mayo del 2020, en contexto de confinamiento social obligatorio (COVID19). A continuación, se muestran distintas visualizaciones generadas con diferentes herramientas: D3.js, googleVis (R), Flourish, RAWGraphs (SVG) y HTML (Bootstrap embebido). </p>
   </div>
 
   <!-- D3.js visualization-->
@@ -98,6 +111,82 @@
     <hr class="my-4">
     <div class="flourish-embed flourish-chart" data-src="visualisation/2580892" data-url="https://flo.uri.sh/visualisation/2580892/embed" data-width="100%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
   </div>
+
+  <!-- Circle Packing -->
+  <div class="container" id="circlep">
+    <p class="lead">Circle Packing</p>
+    <hr class="my-4" >
+    <p>Hecho con SVG mediante RAWGraph. </p>
+  <div id="circles" style="width: 45%; margin-top: -10px">
+  <svg  viewBox="0 0 850 850" perserveAspectRatio="xMinYMid" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(10,10)"><g>
+      <circle class="node node--root" transform="translate(413.5,413.5)" r="413.5" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node" transform="translate(222.02270548993596,414.74184144718043)" r="183.01403261021417" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node" transform="translate(565.2081590315372,414.74184144718043)" r="155.53843543523578" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node" transform="translate(418.9503527615606,679.7732440427326)" r="142.53799460878344" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node" transform="translate(419.04126019138926,148.36436341089012)" r="143.67347884729995" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node" transform="translate(199.69503495000538,673.5989645594286)" r="72.17125503409191" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node" transform="translate(235.3755398348302,187.91755279452306)" r="39.569962130205326" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node" transform="translate(593.1596691387458,612.5178086173207)" r="39.569962130205326" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node" transform="translate(593.9033667696447,217.0724073906611)" r="39.569962130205326" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(146.78934401281475,412.8813219888697)" r="103.12468384953931" style="fill: white; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(327.4671766162335,412.8813219888697)" r="72.92016325772809" style="fill: white; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(262.0603490827798,529.8763129605469)" r="56.483715579981364" style="fill: white; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(260.3276047270918,309.0207468800556)" r="46.11876064914892" style="fill: white; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(488.0617305676469,403.3342337207899)" r="72.92016325772809" style="fill: black; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(622.0985949015077,403.3342337207899)" r="56.483715579981364" style="fill: black; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(570.5088398500764,509.0146726459994)" r="56.483715579981364" style="fill: black; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(569.2378235498255,310.0326629754937)" r="46.11876064914892" style="fill: black; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(348.062112446308,679.7732440427326)" r="65.221776789865" style="fill: rgb(56, 62, 140); fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(474.4005903123056,679.7732440427326)" r="56.483715579981364" style="fill: rgb(56, 62, 140); fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(418.9503527615606,771.5594925062159)" r="46.11876064914892" style="fill: rgb(56, 62, 140); fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(418.9503527615606,587.9869955792493)" r="46.11876064914892" style="fill: rgb(56, 62, 140); fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(360.3008297509771,141.32721401984264)" r="79.88003662643413" style="fill: gray; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(501.2975674535438,141.32721401984264)" r="56.483715579981364" style="fill: gray; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(450.5344723020928,235.7864773140218)" r="46.11876064914892" style="fill: gray; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(442.8817467994065,123.35938032367825)" r="0" style="fill: gray; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(164.76765380699723,673.5989645594286)" r="32.610888394932495" style="fill: rgb(51, 153, 51); fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(234.62241609301353,673.5989645594286)" r="32.610888394932495" style="fill: rgb(51, 153, 51); fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(199.69503495000538,686.5289370615645)" r="0" style="fill: rgb(105, 191, 191); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(199.69503495000538,660.6689920572927)" r="0" style="fill: rgb(105, 191, 191); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(233.04945159570877,187.91755279452306)" r="32.610888394932495" style="fill: rgb(92, 200, 252); fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(270.2933254867926,187.91755279452306)" r="0" style="fill: rgb(207, 60, 28); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(270.005163268889,192.54156805657846)" r="0" style="fill: rgb(207, 60, 28); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(270.005163268889,183.2935375324677)" r="0" style="fill: rgb(207, 60, 28); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(590.8335808996244,612.5178086173207)" r="32.610888394932495" style="fill: red; fill-opacity: 1; stroke: black; stroke-opacity: 1;"></circle>
+      <circle class="node node--leaf" transform="translate(628.0774547907082,612.5178086173207)" r="0" style="fill: rgb(247, 247, 247); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(627.7892925728047,617.1418238793761)" r="0" style="fill: rgb(247, 247, 247); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(627.7892925728047,607.8937933552653)" r="0" style="fill: rgb(247, 247, 247); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(591.5772785305232,217.0724073906611)" r="32.610888394932495" style="fill: rgb(240, 240, 32); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(628.821152421607,217.0724073906611)" r="0" style="fill: rgb(237, 211, 75); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(628.5329902037035,221.69642265271648)" r="0" style="fill: rgb(237, 211, 75); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      <circle class="node node--leaf" transform="translate(628.5329902037035,212.44839212860575)" r="0" style="fill: rgb(237, 211, 75); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"></circle>
+      </g>
+      <g>
+        <text text-anchor="middle" transform="translate(413.5,413.5)" style="font-size: 11px; font-family: Arial, Helvetica;"></text>
+        <text text-anchor="middle" transform="translate(146.78934401281475,412.8813219888697)" style="font-size: 16px; font-family: Arial, Helvetica;">Mariela</text>
+        <text text-anchor="middle" transform="translate(327.4671766162335,412.8813219888697)" style="font-size: 16px; font-family: Arial, Helvetica;">Gonzalo</text>
+        <text text-anchor="middle" transform="translate(262.0603490827798,529.8763129605469)" style="font-size: 16px; font-family: Arial, Helvetica;">Gustavo</text>
+        <text text-anchor="middle" transform="translate(260.3276047270918,309.0207468800556)" style="font-size: 16px; font-family: Arial, Helvetica;">Julieta</text>
+        <text text-anchor="middle" transform="translate(488.0617305676469,403.3342337207899)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Julieta</text>
+        <text text-anchor="middle" transform="translate(622.0985949015077,403.3342337207899)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Mariela</text>
+        <text text-anchor="middle" transform="translate(570.5088398500764,509.0146726459994)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Gonzalo</text>
+        <text text-anchor="middle" transform="translate(569.2378235498255,310.0326629754937)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Gustavo</text>
+        <text text-anchor="middle" transform="translate(348.062112446308,679.7732440427326)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Gustavo</text>
+        <text text-anchor="middle" transform="translate(474.4005903123056,679.7732440427326)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Julieta</text>
+        <text text-anchor="middle" transform="translate(418.9503527615606,771.5594925062159)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Mariela</text>
+        <text text-anchor="middle" transform="translate(418.9503527615606,587.9869955792493)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Gonzalo</text>
+        <text text-anchor="middle" transform="translate(360.3008297509771,141.32721401984264)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Gustavo</text>
+        <text text-anchor="middle" transform="translate(501.2975674535438,141.32721401984264)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Julieta</text>
+        <text text-anchor="middle" transform="translate(450.5344723020928,235.7864773140218)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Gonzalo</text>
+        <text text-anchor="middle" transform="translate(164.76765380699723,673.5989645594286)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Julieta</text>
+        <text text-anchor="middle" transform="translate(234.62241609301353,673.5989645594286)" style="font-size: 16px; font-family: Arial, Helvetica; fill: white;">Gonzalo</text>
+        <text text-anchor="middle" transform="translate(233.04945159570877,187.91755279452306)" style="font-size: 13px; font-family: Arial, Helvetica;">Gonzalo</text>
+        <text text-anchor="middle" transform="translate(590.8335808996244,612.5178086173207)" style="font-size: 13px; font-family: Arial, Helvetica; fill: white;">Gonzalo</text>
+        <text text-anchor="middle" transform="translate(591.5772785305232,217.0724073906611)" style="font-size: 13px; font-family: Arial, Helvetica;">Julieta</text>
+      </g></g>
+    </svg>
+  </div></div>
 
   <!-- Summary -->
   <div class="jumbotron" id="Summary" style="padding-bottom: 100px;">
