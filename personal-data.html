@@ -17,6 +17,13 @@
       border: 3px solid silver;
       background: black;
     }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+
   </style>
   
   <!-- Navbar -->
@@ -37,6 +44,9 @@
           <a class="nav-link" href="#Sankey">googleVis</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#flourish">Flourish</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#Summary">Summary</a>
         </li>
       </ul>
@@ -44,21 +54,28 @@
     </div>
   </nav>
 
-  <div class="jumbotron" id="Intro">
+  <div class="jumbotron" id="Intro" style="background-image: url('https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');">
     <p></p>
-    <p class="lead">Trabajo Final - Datos Personales</p>
-    <hr class="my-4">
-    <p>El Trabajo Final consistió en la recopilación de información personal, para luego generar diferentes visualizaciones para representarla. La información obtenida hace referencia a los colores de las remeras que han sido utilizadas por los integrantes de la casa del autor, entre el 8 y el 23 de mayo del 2020, en contexto de confinamiento social obligatorio. En este caso, se muestran a continuación distintas visualizaciones generadas con diferentes herramientas: D3.js, googleVis (R) y HTML (Bootstrap). </p>
+    <p class="lead" style="color: white;"><b>Trabajo Final - Datos Personales</b></p>
+    <hr class="my-4" style="background-color: white;">
+    <p style="color: white;">El Trabajo Final consistió en la recopilación de información personal, para luego generar diferentes visualizaciones para representarla. La información obtenida hace referencia a los colores de las remeras que han sido utilizadas por los integrantes de la casa del autor, entre el 8 y el 23 de mayo del 2020, en contexto de confinamiento social obligatorio. En este caso, se muestran a continuación distintas visualizaciones generadas con diferentes herramientas: D3.js, googleVis (R), Flourish y HTML (Bootstrap). </p>
   </div>
 
   <!-- D3.js visualization-->
   <div class="container justify-content-center" id="d3js" style="padding-bottom: 50px;">
     <p class="lead">D3.js</p>
-    <hr class="my-4">
-    <div id="Gustavo"></div>  
-    <div id="Mariela"></div>
-    <div id="Julieta"></div>
-    <div id="Gonzalo"></div>
+    <hr class="my-3">
+    <p>Gustavo</p>
+    <div id="Gustavo" class="center"></div> 
+    <hr class="my-3">
+    <p>Mariela</p> 
+    <div id="Mariela" class="center"></div>
+    <hr class="my-3">
+    <p>Julieta</p>
+    <div id="Julieta" class="center"></div>
+    <hr class="my-3">
+    <p>Gonzalo</p>
+    <div id="Gonzalo" class="center"></div>
   </div>
 
   <!-- Sankey generated in R 3.6.1 by googleVis 0.6.4 package -->
@@ -303,40 +320,76 @@
     <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID5dc81eed37c3"></script>
 
     <!-- divChart -->
-    <div id="Sankey" class="container" style="padding-bottom: 50px;">
+    <div class="container" style="padding-bottom: 50px;">
       <p></p>
       <p></p>
       <p class="lead">googleVis Sankey (R)</p>
       <hr class="my-4">
+      <h4 id="Sankey">Color Usage by Guest</h4>
+      <p></p>
       <div id="SankeyID5dc81eed37c3" 
-        style="width: 1000; height: 500;">
+        class="center" style="width: 1000; height: 450s;">
       </div>
     </div>
   
+  <div class="container" id="flourish">
+    <p class="lead">Flourish</p>
+      <hr class="my-4">
+    <div class="flourish-embed flourish-chart" data-src="visualisation/2580892" data-url="https://flo.uri.sh/visualisation/2580892/embed" data-width="100%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+  </div>
+
   <!-- Summary -->
   <div class="jumbotron" id="Summary">
     <p class="lead">Summary</p>
     <hr class="my-4">
-    <p>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <p class="center">
+      <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Color más usado
       </button>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#mostUsedGustavo" aria-expanded="false" aria-controls="mostUsedGustavo">
         Más usado: Gustavo
       </button>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#mostUsedMariela" aria-expanded="false" aria-controls="mostUsedMariela">
         Más usado: Mariela
       </button>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#mostUsedJulieta" aria-expanded="false" aria-controls="mostUsedJulieta">
         Más usado: Julieta
       </button>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#mostUsedGonzalo" aria-expanded="false" aria-controls="mostUsedGonzalo">
         Más usado: Gonzalo
+      </button>
+      <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#reps" aria-expanded="false" aria-controls="reps">
+        Repeticiones
       </button>
     </p>
     <div class="collapse" id="collapseExample">
       <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+       El color más utilizado a lo largo de los 15 días fue el color blanco, con un total de 20 usos. Esto equivale a más del 30% de las remeras utilizadas.
+      </div>
+    </div>
+    <div class="collapse" id="mostUsedGustavo">
+      <div class="card card-body">
+        El color más utilizado por Gustavo fue el gris, con un total de 6 usos.
+      </div>
+    </div>
+    <div class="collapse" id="mostUsedMariela">
+      <div class="card card-body">
+        El color más utilizado por Mariela fue el blanco, con un total de 10 usos.
+      </div>
+    </div>
+    <div class="collapse" id="mostUsedJulieta">
+      <div class="card card-body">
+        El color más utilizado por Julieta fue el negro, con un total de 5 usos.
+      </div>
+    </div>
+    <div class="collapse" id="mostUsedGonzalo">
+      <div class="card card-body">
+        El color más utilizado por Gonzalo fue el blanco, con un total de 5 usos.
+      </div>
+    </div>
+    <div class="collapse" id="reps">
+      <div class="card card-body">
+        Se contabilizaron un total de 14 repeticiones de remeras respecto a la medición previa.
       </div>
     </div>
   </div>
@@ -359,10 +412,6 @@
       });
         
       color = data.map(d => d.color)
-     
-      d3.select(divN)
-          .append("p")
-          .text(n)
       
       color.forEach(function(d){
         if(d=="Black"){
