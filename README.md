@@ -21,5 +21,5 @@
 
 [Makeover Monday - W21 - Visualizing 40 Years of Music Industry Sales]() Source: [data.world](https://data.world/makeovermonday/2020w21-visualizing-40-years-of-music-industry-sales)
 
-[TP Final - Datos Personales]()
+[TP Final - Datos Personales](https://gonzalopoch.github.io/infovis/personal-data.html)
 
