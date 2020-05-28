@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Personal Data</title>
+  <title>InfoVis</title>
   <script src="https://d3js.org/d3.v5.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="shotcut icon" type="image/png" href="https://img.icons8.com/doodle/48/000000/venn-diagram.png"/>
@@ -38,7 +38,7 @@
   
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">InfoVis</a>
+    <a class="navbar-brand order-md-last" style="color: white"><img src="https://img.icons8.com/doodle/48/000000/venn-diagram.png"> InfoVis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -67,7 +67,7 @@
     </div>
   </nav>
 
-  <div class="jumbotron" id="Intro" style="padding-top: 50px; background-image: url('https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');">
+  <div class="jumbotron" id="Intro" style="padding-top: 80px; margin-bottom: 0px; background-image: url('https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');">
     <p></p>
     <p class="lead" style="color: white;"><b>Trabajo Final - Datos Personales</b></p>
     <hr class="my-4" style="background-color: white;">
@@ -75,41 +75,44 @@
   </div>
 
   <!-- D3.js visualization-->
-  <div class="container justify-content-center" id="d3js" style="padding-bottom: 50px;">
-    <p class="lead">D3.js</p>
-    <hr class="my-3">
-    <p>Gustavo</p>
-    <div id="Gustavo"></div> 
-    <hr class="my-3">
-    <p>Mariela</p> 
-    <div id="Mariela"></div>
-    <hr class="my-3">
-    <p>Julieta</p>
-    <div id="Julieta"></div>
-    <hr class="my-3">
-    <p>Gonzalo</p>
-    <div id="Gonzalo"></div>
+  <div class="jumbotron">
+    <div class="container justify-content-center" id="d3js" style="padding-bottom: 50px;">
+      <p class="lead"><b>D3.js</b></p>
+      <hr class="my-3">
+      <p>Gustavo</p>
+      <div id="Gustavo"></div> 
+      <hr class="my-3">
+      <p>Mariela</p> 
+      <div id="Mariela"></div>
+      <hr class="my-3">
+      <p>Julieta</p>
+      <div id="Julieta"></div>
+      <hr class="my-3">
+      <p>Gonzalo</p>
+      <div id="Gonzalo"></div>
+    </div>
   </div>
-
  
   <!-- Sankey -->
   <div class="container" style="padding-bottom: 50px;">
-    <p></p>
-    <p></p>
-    <p class="lead" id="Sankey">Sankey</p>
-    <hr class="my-4">
-    <h5 ><a target="_blank" rel="noopener noreferrer" href="http://gonzalopoch.github.io/infovis/gVisSankey.html" >googleVis version</a></h5>
-    <p></p>
-    <div class="conatiner">
-      <div class="flourish-embed flourish-sankey" data-src="visualisation/2582497" data-url="https://flo.uri.sh/visualisation/2582497/embed" data-width="100%" ><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-    </div>
+      <p></p>
+      <p></p>
+      <p class="lead" id="Sankey">Sankey</p>
+      <hr class="my-4">
+      <h5 ><a target="_blank" rel="noopener noreferrer" href="http://gonzalopoch.github.io/infovis/gVisSankey.html" >googleVis version</a></h5>
+      <p></p>
+      <div class="conatiner">
+        <div class="flourish-embed flourish-sankey" data-src="visualisation/2582497" data-url="https://flo.uri.sh/visualisation/2582497/embed" data-width="100%" ><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      </div>
   </div>
   
   <!--Flourish-->
-  <div class="container" id="flourish">
+  <div class="jumbotron">
+    <div class="container" id="flourish">
     <p class="lead">Area Chart</p>
     <hr class="my-4">
     <div class="flourish-embed flourish-chart" data-src="visualisation/2580892" data-url="https://flo.uri.sh/visualisation/2580892/embed" data-width="100%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    </div>
   </div>
 
   <!-- Circle Packing -->
@@ -120,7 +123,7 @@
   <div id="circles" style="width: 45%; margin-top: 0px; margin-bottom: 40px; margin-left: 28%">
   <svg  viewBox="0 0 850 850" perserveAspectRatio="xMinYMid" xmlns="http://www.w3.org/2000/svg">
     <g transform="translate(10,10)"><g>
-      <circle class="node node--root" transform="translate(413.5,413.5)" r="413.5" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
+      <circle class="node node--root" transform="translate(413.5,413.5)" r="413.5" style="fill-opacity: 0.8; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
       <circle class="node" transform="translate(222.02270548993596,414.74184144718043)" r="183.01403261021417" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
       <circle class="node" transform="translate(565.2081590315372,414.74184144718043)" r="155.53843543523578" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
       <circle class="node" transform="translate(418.9503527615606,679.7732440427326)" r="142.53799460878344" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1;"></circle>
