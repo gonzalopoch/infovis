@@ -17,9 +17,9 @@
 
 [Timeline JS - Club Estudiantes de La Plata](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11GJMXl5rRmxSqhIjvDFF6sF7exVMCwGEFv-YHHDcTRo&font=Default&lang=en&initial_zoom=2&height=650)
 
-**Semana 4** _(Work in progress)_
+**Semana 4**
 
-[Makeover Monday - W21 - Visualizing 40 Years of Music Industry Sales]() Source: [data.world](https://data.world/makeovermonday/2020w21-visualizing-40-years-of-music-industry-sales)
+[Makeover Monday - W21 - Visualizing 40 Years of Music Industry Sales (Google Colab)](https://colab.research.google.com/drive/1Tw4qWmALst2BBmsHnxACMNckbYKSC6wd) Source: [data.world](https://data.world/makeovermonday/2020w21-visualizing-40-years-of-music-industry-sales)
 
 [TP Final - Datos Personales](https://gonzalopoch.github.io/infovis/personal-data.html)
 
